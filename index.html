@@ -1,0 +1,147 @@
+from IPython.display import display, HTML, Javascript
+
+# Replace with your boyfriend's name
+name = "Your Love" # e.g., "Eastel"
+
+html_content = f"""
+<!DOCTYPE html>
+<html>
+<head>
+<title>Happy Birthday Esthapooo❤️</title>
+<style>
+body {{
+font-family: 'Segoe UI', sans-serif;
+background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+text-align: center;
+color: #333;
+padding: 30px;
+}}
+.card {{
+background: white;
+border-radius: 20px;
+padding: 30px;
+margin: auto;
+max-width: 700px;
+box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}}
+h1 {{
+color: #e63946;
+font-size: 40px;
+}}
+h2 {{
+color: #6a0572;
+margin-top: 20px;
+}}
+.plan {{
+background: #fff5f7;
+border-left: 6px solid #ff6b81;
+margin: 15px 0;
+padding: 15px;
+text-align: left;
+border-radius: 10px;
+font-size: 18px;
+}}
+.button {{
+background-color: #e63946;
+color: white;
+padding: 12px 25px;
+border: none;
+border-radius: 25px;
+font-size: 18px;
+cursor: pointer;
+margin-top: 20px;
+}}
+.button:hover {{
+background-color: #c1121f;
+}}
+.footer {{
+margin-top: 25px;
+font-style: italic;
+color: #555;
+}}
+</style>
+</head>
+<body>
+<div class="card">
+<h1>🎉 Happiest Birthday, Shuttumaniiiii! 🎂</h1>
+<IMG SRC="animation1. gif">
+<p>
+This isn’t just a birthday… it’s a <strong>Birthday Weekend Celebration</strong>!
+I’ve planned a few little surprises to make you feel as special as you make me feel every day. ❤️
+</p>
+
+<button class="button" onclick="document.getElementById('plans').style.display='block'">
+💌 Click to Reveal Your Birthday Week Plans
+</button>
+
+<div id="plans" style="display:none; margin-top:20px;">
+<h2>✨ Your Birthday Week ✨</h2>
+
+<div class="plan">
+<strong>🛍️ Saturday:</strong> Today: Well, how do you feel about this first surprise? Thanks to chatGPT and my coding skills 😜.
+</div>
+<div class="plan"> 
+<strong>🛍️ Saturday:</strong> Today we also have Shopping together  for badminton jerseys (present 2).
+</div>
+<div class="plan">
+<strong>⛪ Sunday:</strong> Slow sunday morning. Get ready by 9AM (Present 3). Normal casual attire.
+</div>
+<div class="plan">
+<strong>🍽️ Sunday:</strong> Sunday evening Dinner and cake cutting ceremony at home. Get ready to be rumantic by 11:45 🙊(present 4). 
+</div>
+<div class="plan">
+<strong>🥞 Monday:</strong> Monday morning WFH. So plakum-plakum time 💌. And if possible breakfast in bed (you know i cant wake up early, but i will try 💪) 
+</div>
+<div class="plan">
+<strong>🥩 Monday:</strong> A romantic birthday dinner reserved. Wear something formal and be ready by 6:45 PM (present 5).
+</div>
+<div class="plan">
+<strong>🛏️ Tuesday:</strong> A special surprise (present 6) that i have been making since last 3 days. I am sure you will love it 🥹.
+</div>
+</div>
+
+<p class="footer">
+With all my love,<br>
+❤️ Mariyakoch
+</p>
+</div>
+
+<script>
+// Simple confetti effect
+function confetti() {{
+const colors = ['#ff6b81', '#feca57', '#48dbfb', '#1dd1a1', '#5f27cd'];
+for (let i = 0; i < 150; i++) {{
+const conf = document.createElement('div');
+conf.style.position = 'fixed';
+conf.style.width = '8px';
+conf.style.height = '8px';
+conf.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+conf.style.top = '-10px';
+conf.style.left = Math.random() * window.innerWidth + 'px';
+conf.style.opacity = Math.random();
+conf.style.transform = 'rotate(' + Math.random() * 360 + 'deg)';
+conf.style.transition = 'all 3s ease-out';
+document.body.appendChild(conf);
+
+setTimeout(() => {{
+conf.style.top = window.innerHeight + 'px';
+}}, 100);
+
+setTimeout(() => {{
+conf.remove();
+}}, 3000);
+}}
+
+window.onload = confetti;
+
+// Optional: Open a romantic song or playlist
+function openPlaylist() {{
+window.open("https://open.spotify.com/", "_blank");
+}}
+</script>
+</body>
+</html>
+"""
+
+display(HTML(html_content))
+
