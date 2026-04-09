@@ -106,39 +106,8 @@ With all my love,<br>
 </p>
 </div>
 
-<script>
-// Simple confetti effect
-function confetti() {{
-const colors = ['#ff6b81', '#feca57', '#48dbfb', '#1dd1a1', '#5f27cd'];
-for (let i = 0; i < 150; i++) {{
-const conf = document.createElement('div');
-conf.style.position = 'fixed';
-conf.style.width = '8px';
-conf.style.height = '8px';
-conf.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-conf.style.top = '-10px';
-conf.style.left = Math.random() * window.innerWidth + 'px';
-conf.style.opacity = Math.random();
-conf.style.transform = 'rotate(' + Math.random() * 360 + 'deg)';
-conf.style.transition = 'all 3s ease-out';
-document.body.appendChild(conf);
-
-setTimeout(() => {{
-conf.style.top = window.innerHeight + 'px';
-}}, 100);
-
-setTimeout(() => {{
-conf.remove();
-}}, 3000);
-}}
-
-window.onload = confetti;
-
-// Optional: Open a romantic song or playlist
-function openPlaylist() {{
-window.open("https://open.spotify.com/", "_blank");
-}}
-</script>
+<canvas id = "confetti-canvas"></canvas>
+<script src="script.js"></script>
 </body>
 </html>
 """
